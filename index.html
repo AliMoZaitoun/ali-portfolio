@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Zaitoun | Security-Focused Developer</title>
+    <meta
+      name="description"
+      content="Ali Zaitoun – Final-year Software Engineering Student & Security-Focused Developer. Backend Engineering, System Architecture, Cybersecurity."
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Space Grotesk", "Tajawal", "system-ui", "sans-serif"],
+              mono: ["JetBrains Mono", "monospace"],
+            },
+            colors: {
+              cyan: { DEFAULT: "#00f0ff" },
+              deep: "#060a12",
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Particle Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a href="#" class="logo">
+          <span class="logo-icon">AZ</span>
+          <span>Ali Zaitoun</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#education" data-i18n="nav.education">Education</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <button id="lang-toggle" type="button">العربية</button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-inner">
+        <!-- Left: Identity -->
+        <div class="hero-content">
+          <div class="avatar-wrap">
+            <div class="avatar-ring"></div>
+            <div class="avatar">AZ</div>
+          </div>
+
+          <h1 id="hero-name">Ali Zaitoun</h1>
+          <p class="hero-title" id="hero-title">
+            Final-year Software Engineering Student | Security-Focused Developer
+          </p>
+          <p class="hero-bio" id="hero-bio">
+            Building secure, scalable systems. Backend engineer transitioning
+            into Cybersecurity.
+          </p>
+
+          <div class="hero-meta">
+            <span>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                />
+                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span id="hero-location">Syria – Quneitra</span>
+            </span>
+            <span>
+              <svg
+                width="14"
+                height="14"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              alimozaitoun@gmail.com
+            </span>
+          </div>
+
+          <div class="flex flex-wrap gap-3">
+            <a href="#projects" class="btn-link">View Projects</a>
+            <a
+              href="https://github.com/AliMoZaitoun"
+              target="_blank"
+              rel="noopener"
+              class="btn-link secondary"
+              >GitHub</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: Interactive Terminal -->
+        <div>
+          <div class="terminal-wrap" id="terminal">
+            <div class="term-header">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+              <span class="term-title" data-i18n="hero.terminal"
+                >Interactive Terminal</span
+              >
+            </div>
+            <div id="term-output"></div>
+            <form id="term-form">
+              <span class="prompt">visitor@ali-zaitoun:~$</span>
+              <input
+                type="text"
+                id="term-input"
+                autocomplete="off"
+                spellcheck="false"
+                placeholder="type 'help'..."
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="section.about">About Me</h2>
+        <div class="about-grid">
+          <div class="about-card geometric">
+            <p class="about-summary" id="about-summary"></p>
+            <div class="tags" id="about-languages"></div>
+          </div>
+          <div class="about-card geometric">
+            <h3
+              class="text-cyan text-sm font-semibold mb-3 uppercase tracking-wider"
+            >
+              Interests
+            </h3>
+            <div class="tags" id="about-interests"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="section.skills">
+          Technical Skills
+        </h2>
+        <div id="skills-grid"></div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="section.projects">
+          Featured Projects
+        </h2>
+        <div id="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="section.education">Education</h2>
+        <div id="education-list"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-inner">
+        <h2 class="section-title" data-i18n="section.contact">Get In Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card geometric">
+            <div class="contact-label">Email</div>
+            <a id="contact-email" href="mailto:alimozaitoun@gmail.com"
+              >alimozaitoun@gmail.com</a
+            >
+          </div>
+          <div class="contact-card geometric">
+            <div class="contact-label">Phone</div>
+            <a id="contact-phone" href="tel:+963930521415">+963930521415</a>
+          </div>
+          <div class="contact-card geometric">
+            <div class="contact-label">GitHub</div>
+            <a
+              id="contact-github"
+              href="https://github.com/AliMoZaitoun"
+              target="_blank"
+              rel="noopener"
+              >AliMoZaitoun</a
+            >
+          </div>
+          <div class="contact-card geometric">
+            <div class="contact-label">Location</div>
+            <span id="contact-location">Syria – Quneitra</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p class="mt-1 text-xs opacity-60">© 2026 Ali Zaitoun</p>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

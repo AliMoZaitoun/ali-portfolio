@@ -1,0 +1,148 @@
+/* ==============================
+   RESPONSIVE – Mobile First + Laptop
+   ============================== */
+
+/* Tablet and below */
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terminal-wrap {
+    height: 340px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .nav-inner {
+    padding: 0.7rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.65rem;
+  }
+
+  #lang-toggle {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 5.5rem 1rem 3rem;
+    min-height: auto;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-title {
+    font-size: 0.98rem;
+  }
+
+  .hero-bio {
+    font-size: 0.95rem;
+  }
+
+  .avatar-wrap {
+    width: 110px;
+    height: 110px;
+  }
+
+  .avatar {
+    font-size: 2rem;
+  }
+
+  .terminal-wrap {
+    height: 300px;
+    font-size: 0.78rem;
+  }
+
+  section {
+    padding: 3.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.75rem;
+  }
+
+  #projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    padding: 1.35rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-card {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .contact-card a {
+    font-size: 0.85rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .btn-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .hero-inner,
+  .section-inner,
+  .nav-inner {
+    max-width: 1280px;
+  }
+}
