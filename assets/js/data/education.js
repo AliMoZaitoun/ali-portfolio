@@ -7,10 +7,13 @@ export const education = [
       ar: "جامعة دمشق – كلية تكنولوجيا المعلومات",
     },
     degree: {
-      en: "Bachelor of Science in Software Engineering",
-      ar: "بكالوريوس علوم في هندسة البرمجيات",
+      en: "Bachelor of Science in Software Engineering – Final Year",
+      ar: "بكالوريوس علوم في هندسة البرمجيات – السنة الأخيرة",
     },
-    period: "2021 – 2026",
+    period: {
+      en: "2021 – Present",
+      ar: "2021 – حتى الآن",
+    },
     location: {
       en: "Damascus, Syria",
       ar: "دمشق، سوريا",
@@ -26,7 +29,10 @@ export const education = [
       en: "English Language Certificate – Intermediate Level (B1.2)",
       ar: "شهادة اللغة الإنجليزية – المستوى المتوسط (B1.2)",
     },
-    period: "Sep 2025 – Present",
+    period: {
+      en: "Sep 2025 – Present",
+      ar: "سبتمبر 2025 – حتى الآن",
+    },
     location: {
       en: "Damascus, Syria",
       ar: "دمشق، سوريا",

@@ -84,7 +84,7 @@ function renderEducation() {
     .map(
       (edu) => `
       <div class="edu-card geometric">
-        <div class="edu-period">${edu.period}</div>
+        <div class="edu-period">${t(edu.period)}</div>
         <h3>${t(edu.degree)}</h3>
         <p class="edu-inst">${t(edu.institution)}</p>
         <p class="edu-loc">${t(edu.location)}</p>
