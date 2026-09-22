@@ -1,24 +1,22 @@
-// education.js
-
 export const education = [
   {
     institution: {
-      en: "Damascus University – College of Information Technology",
-      ar: "جامعة دمشق – كلية تكنولوجيا المعلومات",
+      en: "Damascus University | Faculty of Information Technology",
+      ar: "جامعة دمشق | كلية الهندسة المعلوماتية",
     },
     degree: {
-      en: "Bachelor of Science in Software Engineering – Final Year",
-      ar: "بكالوريوس علوم في هندسة البرمجيات – السنة الأخيرة",
+      en: "Bachelor of Science in Software Engineering",
+      ar: "بكالوريوس في هندسة البرمجيات",
     },
     period: {
-      en: "2021 – Present",
-      ar: "2021 – حتى الآن",
+      en: "2021 – 2026",
+      ar: "2021 – 2026",
     },
     location: {
       en: "Damascus, Syria",
       ar: "دمشق، سوريا",
     },
-    status: "final-year",
+    status: "completed",
   },
   {
     institution: {
@@ -26,8 +24,8 @@ export const education = [
       ar: "معهد بلو أوشن",
     },
     degree: {
-      en: "English Language Certificate – Intermediate Level (B1.2)",
-      ar: "شهادة اللغة الإنجليزية – المستوى المتوسط (B1.2)",
+      en: "English Language Certificate – Intermediate Level (B1)",
+      ar: "شهادة اللغة الإنجليزية – المستوى المتوسط (B1)",
     },
     period: {
       en: "Sep 2025 – Present",

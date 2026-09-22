@@ -1,54 +1,58 @@
-// skills.js
-
 export const skills = {
   backend: {
     title: { en: "Backend Engineering", ar: "هندسة الباك إند" },
     items: [
       "Laravel",
-      "MySQL",
-      "SQL Server",
+      "MySQL & SQL Server",
       "RESTful APIs",
-      "Database Transactions",
-      "Docker",
-      "S3 Storage",
-      "SOA Architecture",
+      "Database Transactions (ACID)",
+      "Docker & Containerization",
+      "AWS S3 Integration",
+      "Redis & Caching Strategies",
     ],
   },
   architecture: {
     title: { en: "Software Architecture", ar: "معمارية البرمجيات" },
     items: [
+      "SOA (Service-Oriented Architecture)",
       "Design Patterns (23 GoF)",
       "SOLID Principles",
-      "DAO Pattern",
-      "AOP (Aspect-Oriented Programming)",
-      "Layered Architecture",
-      "Hexagonal Architecture",
-      "API Versioning",
+      "DAO & AOP Patterns",
+      "Layered & Hexagonal Architecture",
+      "API Versioning & Database Schema Design",
     ],
   },
   security: {
-    title: { en: "Cybersecurity & Networking", ar: "الأمن السيبراني والشبكات" },
+    title: {
+      en: "Cybersecurity & System Defense",
+      ar: "الأمن السيبراني وحماية الأنظمة",
+    },
     items: [
-      "Nmap",
-      "Burp Suite (Basics)",
-      "Wireshark",
-      "Linux Hardening & iptables",
-      "DNS & Network Configuration",
-      "Secure Software Development",
-      "RBAC (Spatie)",
-      "Activity Logging & Auditing",
+      "OWASP Top 10 Mitigation",
+      "Spatie RBAC & Access Control",
+      "Audit Logging & Activity Tracking",
+      "Secure SDLC Practices",
+      "System Hardening & Linux Admin",
+      "Network Security (iptables, DNS)",
+      "Security Tooling (Wireshark, Burp Suite, Nmap)",
+    ],
+  },
+  frontend: {
+    title: { en: "Frontend Knowledge", ar: "تقنيات الواجهات الأمامية" },
+    items: [
+      "React.js",
+      "TypeScript",
+      "Feature-Based Architecture",
+      "i18n (Internationalization)",
     ],
   },
   soft: {
-    title: {
-      en: "Soft Skills & Professional",
-      ar: "المهارات الناعمة والمهنية",
-    },
+    title: { en: "Soft Skills & Professional", ar: "المهارات المهنية" },
     items: [
-      "Public Speaking",
       "Technical Presentation",
       "Analytical Thinking",
       "Logic-based Troubleshooting",
+      "Public Speaking",
     ],
   },
 };
